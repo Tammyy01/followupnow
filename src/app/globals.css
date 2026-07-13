@@ -1402,3 +1402,53 @@ a {
     align-items: stretch;
   }
 }
+
+/* ═══════════════════════════════════════════
+   PREMIUM DASHBOARD ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.transition-premium {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-card-premium {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-card-premium:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 20px 40px rgba(107, 143, 126, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  border-color: rgba(107, 143, 126, 0.25);
+}
+
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-rotate {
+  animation: slow-rotate 25s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
