@@ -305,7 +305,7 @@ export default function UsersClient({ data }: { data: UsersData }) {
                     </tr>
                   ) : (
                     data.users.map((user) => (
-                      <tr key={user._id} className="hover:bg-[#FCFBF9] transition">
+                      <tr key={user._id} onClick={() => router.push(`/users/${user._id}`)} className="hover:bg-[#FCFBF9] transition cursor-pointer">
                         <td className="py-4 px-6">
                           <div className="flex items-center gap-3">
                             <div
